@@ -10,10 +10,20 @@ public class Solution {
     public int salary = 10_000;
 
     public void setPosition(String position) {
-        position = position;
+        this.position = position;
     }
 
     public void setSalary(int salary) {
-        salary = salary;
+        this.salary = salary;
+    }
+}
+
+class Test{
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.name+" "+solution.position+" "+solution.salary);
+        solution.setPosition("Creator");
+        solution.setSalary(1578789123);
+        System.out.println(solution.name+" "+solution.position+" "+solution.salary);
     }
 }
