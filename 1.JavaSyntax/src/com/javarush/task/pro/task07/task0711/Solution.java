@@ -14,6 +14,10 @@ public class Solution {
     }
 
     public static void fillArray(Integer[] array, int value, int begin, int end) {
-        //напишите тут ваш код
+       /* for (int i = begin; i < end; i++) {
+            array[i] = value;
+
+        }*/
+        Arrays.fill(array,begin,end,value);
     }
 }

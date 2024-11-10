@@ -2,7 +2,7 @@ package com.javarush.task.pro.task07.task0710;
 
 /* 
 Массив значений
-
+*/
 
 import java.util.Arrays;
 
@@ -14,10 +14,6 @@ public class Solution {
     }
 
     public static void fillArray(Integer[] array, int value){
-        for (int i = 0; i < ; i++) {
-
-
-        }
+        Arrays.fill(array,value);
     }
 }
-*/
