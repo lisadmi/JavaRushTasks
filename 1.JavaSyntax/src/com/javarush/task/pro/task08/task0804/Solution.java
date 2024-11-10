@@ -11,7 +11,11 @@ public class Solution {
     }
 
     public static int generateNumber() {
-        //напишите тут ваш код
-        return  -1;
+
+       int a = (int) (Math.random()*100);
+
+
+
+        return  a;
     }
 }

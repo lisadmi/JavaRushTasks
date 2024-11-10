@@ -18,11 +18,12 @@ public class Solution {
 
     public static boolean checkFlag(int number, int flagPos) {
 
-        return false;
+        return (number & (1<<flagPos))  == (1<<flagPos);
     }
 
     public static void main(String[] args) {
         System.out.println(setFlag(16,2));
         System.out.println(resetFlag(20,2));
+
     }
 }
