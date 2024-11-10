@@ -13,10 +13,12 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double bodyTemperature = scanner.nextDouble();
-        if (bodyTemperature > 37) {
-            System.out.println(isHigh);
-        } else if (bodyTemperature < 36){
-            System.out.println(isLow);
+        isHigh = bodyTemperature > 37;
+        isLow = bodyTemperature < 36;
+        if (isHigh) {
+            System.out.println("температура тела высокая");
+        } else if (isLow) {
+            System.out.println("температура тела низкая");
         } else {
             System.out.println("температура тела нормальная");
         }

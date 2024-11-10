@@ -9,14 +9,15 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        int secumber = scanner.nextInt();
+        double number = scanner.nextDouble();
+        double secondNumber = scanner.nextDouble();
 
-         if (number==secumber){
+        if (Math.abs(secondNumber - number) < 0.000001) {
 
-        System.out.println("числа равны");}
-        else{
-}
-        System.out.println("числа не равны");}
+            System.out.println("числа равны");
+        } else {
+            System.out.println("числа не равны");
+        }
     }
+}
 
